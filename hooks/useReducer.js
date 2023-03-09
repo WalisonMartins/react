@@ -18,3 +18,24 @@ const HookUseReducer = () => {
     </div>
   )
 }
+
+
+// USE REDUCER COM ACTIONS
+
+/*
+- Se o useReducer fosse utilizado como no exemplo passado, não teria tanta diferença do useState.
+- Por isso o reducer geralmente contém operações mais complexas, utilizando a estrutura switch  actions
+- Esta situação foi apresentada na seção de context API
+
+ */
+
+const initialTasks = [
+  { id: 1, text: 'Fazer alguma coisa' },
+  { id:2, text: 'Fazer outra coisa'}
+]
+ 
+const taskReducer = (state, action) => {
+   
+}
+ 
+ const [tasks, dispatchTasks] = 

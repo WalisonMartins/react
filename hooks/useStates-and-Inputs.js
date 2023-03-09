@@ -14,9 +14,11 @@ const handleSubmit = (e) => {
 }
 
 return (
-  <form onSubmit={handleSubmit}>
-    <input type="text" value={age} onChange={(e) => setAge(e.target.value)} />
-  <input type="submit" value="Enviar" />
-  </form>
-  <p>Você tem {age} anos!</p>
+  <div>
+    <form onSubmit={handleSubmit}>
+      <input type="text" value={age} onChange={(e) => setAge(e.target.value)} />
+    <input type="submit" value="Enviar" />
+    </form>
+    <p>Você tem {age} anos!</p>
+  </div>
 );
